@@ -19,6 +19,7 @@ const Featured = () => {
             <button>Capri Point</button>
             <button>Igoma</button>
             <button>Ilemela</button>
+            <button>Bwiru</button>
           </div>
         </div>
         <div className="right"></div>
