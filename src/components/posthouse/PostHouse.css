@@ -1,0 +1,99 @@
+.posthouse {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: darkgreen;
+  padding: 50px 0;
+  color: white;
+
+  .container {
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .posttext {
+      display: flex;
+      flex-direction: column;
+
+      h2 {
+        font-weight: 500;
+        font-size: 28px;
+        letter-spacing: -0.4px;
+        line-height: 32px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 22px;
+        padding: 12px 0;
+      }
+    }
+
+    .postbutton {
+      display: flex;
+
+      button {
+        border: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: orangered;
+        color: white;
+        transition: all 0.15s ease-in;
+
+        &:hover {
+          background-color: rgb(247, 93, 37);
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+
+@media only screen and (max-width: 960px) {
+
+
+
+  .posthouse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      width: 92%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      .posttext {
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        h2 {
+          width: 92%;
+          font-size: 22px;
+          font-weight: 400;
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 400;
+
+        }
+      }
+      
+
+      .postbutton {
+        button {
+          font-size: 16px;
+        }
+      }
+     
+    }
+  }
+}

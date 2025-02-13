@@ -1,0 +1,165 @@
+.featured {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center; 
+  /* color: white; */
+  color: darkgreen;
+  background: url("/images/farmlandone.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: cover;
+  color:white;
+
+  .container {
+    width: 86%;
+    display: flex;
+    align-items: center;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      z-index: 99;
+
+      h1 {
+        font-size: 50px;
+        width: 51%;
+
+        i {
+          font-weight: 300;
+        }
+      }
+
+      .search {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 5px;
+
+        .searchInput {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+          }
+
+          input {
+            border: none;
+            outline: none;
+          }
+        }
+
+        button {
+          width: 120px;
+          height: 50px;
+          border: none;
+          background-color: darkgreen;
+          color: white;
+          cursor: pointer;
+          font-size: 16px;
+          transition: all 0.15s ease-in;
+
+          &:hover {
+            background-color: rgb(6, 153, 6);
+          }
+        }
+      }
+
+      .popular {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        span {
+          color: white;
+          font-size: 16px;
+        }
+        button {
+          color: white;
+          background-color: transparent;
+          border: 1px solid white;
+          padding: 5px 10px;
+          font-size: 14px;
+          border-radius: 20px;
+          cursor: pointer;
+          transition: all 0.15s ease-in;
+
+          &:hover {
+            background-color: white;
+            color: darkgreen;
+          }
+        }
+      }
+    }
+    .right {
+      height: 100%;
+
+      img {
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+
+.featured::after {
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.6);
+  content:"";
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+
+  
+}
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 960px) {
+  .featured {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;      
+    color: white;  
+
+    .container {
+      width: 92%;
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+
+      .left {
+        display: flex ;
+        flex-direction: column;
+        gap: 12px; 
+      }
+
+      h1 {
+        font-size: 30px !important;
+        width:100% !important;
+
+        i {
+          font-weight: 200;
+        }
+      }
+
+      .search {
+        width: 100% !important;         
+      }
+
+      
+    }
+    
+  }
+}

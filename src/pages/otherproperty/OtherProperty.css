@@ -1,0 +1,144 @@
+.otherproperty {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+  .container {
+    width: 86%;
+
+    .title > h2 {
+      width: 100%;
+      margin: 40px 0;
+      font-weight: 500;
+      font-size: 28px;
+      letter-spacing: -0.4px;
+      line-height: 32px;
+    }
+
+    .otherpropertysalecard {
+      
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .otherpropertycard {
+      margin-bottom: 40px;
+      position: relative;
+
+      .otherimage {
+        max-width: 400px;
+        height: 100%;
+      }
+
+     .otherforsale {
+      width: 100%;
+
+      }
+
+      .otherpropertytitle > h2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 4px 0 12px 0;
+        color: gray;     
+      }
+
+      .exploreotherpr{
+        display: flex;
+        justify-content: space-between;
+
+        p {
+          color: darkgreen;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+
+@media only screen and (max-width: 960px) {
+
+  .otherproperty {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+
+    .container {
+      width: 92%;
+  
+      .title h2 {
+        width: 100%;
+        margin: 40px 0;
+        font-weight: 400;
+        font-size: 22px;
+      
+      }
+
+
+      .otherpropertysalecard {      
+        display: grid;
+        align-items: center;
+        
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+
+      .otherpropertycard {
+        margin-bottom: 40px;     
+  
+        .otherimage {
+          max-width: 400px;
+          height: 100%;
+        }
+  
+       .otherforsale {
+        width: 100%;
+  
+        }
+  
+        .otherpropertytitle > h2 {
+          font-weight: 500;
+          font-size: 16px;       
+          padding: 3px 0 10px 0;
+        }
+
+        .otherpropertyarea {
+          display: flex;
+          font-size: 14px;          
+
+        }
+
+        .otherprsize {
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+        }
+
+        .exploreotherpr {
+          display: flex;
+          justify-content: space-between;
+          color: darkgreen;
+          font-size: 14px;
+        }
+      }
+
+
+
+    }
+  }
+
+
+
+
+}
+
+

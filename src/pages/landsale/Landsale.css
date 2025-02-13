@@ -1,0 +1,152 @@
+.landsale {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 86%;
+
+    .title h2 {
+      width: 100%;
+      margin: 40px 0;
+      font-weight: 500;
+      font-size: 28px;
+      letter-spacing: -0.4px;
+      line-height: 32px;
+    }
+
+    .landsalecard {
+      display: flex;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .recentsalelandcard {
+        margin-bottom: 40px;
+        position: relative;
+
+        .recentimage {
+          max-width: 400px;
+          height: 100%;
+        }
+
+        .landforsale {
+          width: 100%;
+        }
+
+        .recentlandstitle > h2 {
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 24px;
+          padding: 4px 0 12px 0;
+          color: gray;
+        }
+
+        .recentsalelandsize {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .recentlandowner {
+          padding: 3px 0;
+        }
+
+        .recentlandowner a {
+          text-decoration: underline;
+        }
+
+        .recentlandowner a:hover {
+          text-decoration: none;
+        }
+
+        /* .recentlandsSale {
+            width: 100%;
+            padding: 40px 0;
+          } */
+
+        .recentlandsSaleContainer {
+          width: 86%;
+          margin: 0 auto;
+        }
+
+        .exploreland {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .exploreland p {
+          font-size: 12px;
+          color: green;
+        }
+
+        .landtype {
+
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          background-color:orangered;
+          color: white;
+          padding: 4px 12px;
+          border-radius: 5px;
+          font-size: 13px;
+
+
+        }
+      }
+    }
+  }
+}
+
+
+/* Media Query */
+
+
+@media only screen and (max-width: 960px) {
+  .landsale {
+    width: 100%;
+   
+    .container {
+      width: 92%;
+  
+      .title > h2 {        
+        width: 100%;
+        margin: 40px 0;
+        font-weight: 400;
+        font-size: 22px;
+        
+      }
+  
+      .landsalecard {
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        flex-wrap: wrap;
+
+        .recentsalelandcard {
+
+          
+          .recentlandstitle > h2 {
+            font-size: 16px;
+            font-weight: 500px;
+            padding: 3px 0;
+            
+          }
+        }
+
+      }
+    }
+  }
+
+
+
+
+
+}
+

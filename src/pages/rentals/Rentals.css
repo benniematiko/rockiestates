@@ -1,0 +1,177 @@
+.rentals {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 86%;
+    align-items: center;
+
+    .title > h2 {
+      width: 100%;
+      margin: 40px 0;
+      font-weight: 500;
+      font-size: 28px;
+      letter-spacing: -0.4px;
+      line-height: 32px;
+    }
+
+    .rentalscard {
+      display: flex;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      flex-wrap: wrap;
+
+      .rentalcard {
+        margin-bottom: 40px;
+        position: relative;
+        background-color: rgb(238, 238, 231);
+        max-width: 400px;
+
+        .rentalimagehouse {
+          width: 100%;
+          height: 300px;
+        }
+
+        .rentaldetails {
+          padding: 0 5px;
+
+          .housetitle > h2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 4px 0 12px 0;
+            color: gray;
+          }
+
+          .housearea {
+            margin: 1px 0;
+          }
+        }
+
+        .rentalssize {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 5px;
+        }
+
+        .rentalowner {
+          padding: 0 5px;
+          text-decoration: underline;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        .explorehouse {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 5px 18px 5px;
+
+          p {
+            font-size: 14px;
+            color: green;
+
+            margin: 2px 0;
+          }
+        }
+
+        .housetype {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          position: absolute;
+          top: 15px;
+          right: 15px;
+          background-color: orangered;
+          color: white;
+          padding: 4px 12px;
+          border-radius: 5px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 960px) {
+
+  .rentals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      width: 92%;
+      align-items: center;
+  
+      .title > h2 {
+        width: 100%;
+        margin: 20px 0;
+        font-weight: 400;
+        font-size: 26px;      
+       
+      }
+
+      .rentalscard {
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+    }
+
+
+
+
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .rentals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .container {
+      width: 92%;
+      align-items: center;
+  
+      .title > h2 {
+        width: 100%;
+        margin: 20px 0;
+        font-weight: 300;
+        font-size: 22px;      
+       
+      }
+
+      .rentalscard {
+        display: flex;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+    }
+
+
+
+
+  }
+  
+  
+}

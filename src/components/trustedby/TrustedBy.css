@@ -1,0 +1,64 @@
+.trustedby {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fafafa;
+  height: 100px;
+
+
+  .container {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: lightgray;
+    font-weight: 500;
+    font-size: 36px;
+    transition:  all 0.15s ease-in;
+
+    a:hover {
+      color: gray;
+
+    }
+
+    img {
+      height: 50px;
+      object-fit: contain;
+    }
+
+  }
+}
+
+/* MEDIA QUERY */
+
+
+ @media only screen and (max-width: 960px) {
+
+  .trustedby { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    .container {
+      width: 92%; 
+      display: flex;
+      align-items: center;
+      
+      span {     
+        font-size: 18px;        
+      }
+      
+      a {
+        font-size: 18px;  
+      } 
+     
+  
+    }
+    
+  }
+  
+
+
+
+}

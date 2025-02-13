@@ -1,0 +1,23 @@
+.signin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width:60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    .title {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
